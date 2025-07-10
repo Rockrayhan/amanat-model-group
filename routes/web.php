@@ -27,6 +27,9 @@ Route::get('/', function () {
 Route::get('/about/management', function () {
     return view('frontend.management');
 }) ;
+Route::get('/contact', function () {
+    return view('frontend.contact');
+}) ;
 
 
 

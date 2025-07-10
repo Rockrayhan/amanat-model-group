@@ -36,11 +36,13 @@ Company list:
 
 
 
-1. about page
-2. contact page
+
+1. managemnet page //
+2. contact page 
 3. navbar -> (active link, hover animation, sticky, bg blur, mega menu)
-4. managemnet page
 5. globe
 6. loader with logo
 7. back to top
 8. aos animation
+
+<x-frontend.show-more-button />

@@ -139,7 +139,9 @@
         <!-- Navbar End -->
         <div class="navbar-end hidden md:flex">
             <a
-                class="inline-flex items-center gap-1 border-2 border-gray-600 px-6 py-3 hover:bg-gray-200 transition-all duration-200 cursor-pointer group">
+                class="inline-flex items-center gap-1 border-2 border-gray-600 px-6 py-3 hover:bg-gray-200 transition-all duration-200 cursor-pointer group"
+                href="/contact"
+                >
                 <span>Contact Us</span>
                 <span class="transform transition-transform duration-300 group-hover:translate-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

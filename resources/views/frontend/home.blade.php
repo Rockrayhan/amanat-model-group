@@ -267,7 +267,7 @@
             <!-- Right Content -->
             <div class="w-full flex justify-center">
                 <div class="space-y-6 w-full max-w-lg text-center md:text-left">
-                    <h3 class="h3 font-bold leading-tight"> Our Founder </h3>
+                    <h2 class="h2 font-bold leading-tight"> Our Founder </h2>
                     <p class="text-lg leading-relaxed">
                         Since our establishment in 1990, Amanat Group has evolved into a diversified business entity with
                         operations spanning manufacturing, technology, healthcare, and infrastructure.
@@ -276,10 +276,7 @@
                         Guided by a vision of sustainable growth and community empowerment, we are committed to innovation,
                         excellence, and delivering value across every sector we touch.
                     </p>
-                    <a href="#more"
-                        class="inline-block bg-white text-sky-600 font-semibold px-6 py-2 rounded-lg shadow hover:bg-gray-100 transition duration-300">
-                        Learn More
-                    </a>
+                    <x-frontend.show-more-button />
                 </div>
             </div>
 
@@ -294,7 +291,7 @@
             <!-- Left Content -->
             <div class="w-full flex justify-center">
                 <div class="space-y-6 w-full max-w-lg text-center md:text-left">
-                    <h2 class="text-4xl font-bold text-secondary leading-tight">
+                    <h2 class="h2 font-bold text-secondary leading-tight">
                         Vision of Amanat Group
                     </h2>
                     <p class="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -305,10 +302,15 @@
                         Our vision is to drive sustainable growth, empower communities, and set industry standards through
                         innovation, integrity, and excellence in every endeavor.
                     </p>
-                    <a href="#more"
-                        class="inline-block bg-sky-600 text-white font-medium px-6 py-3 rounded-lg shadow-md hover:bg-sky-700 transition-all duration-300">
-                        Learn More
-                    </a>
+
+
+                    {{-- btn primary --}}
+                    <x-frontend.show-more-button />
+
+
+
+
+
                 </div>
             </div>
 
@@ -326,36 +328,48 @@
     {{-- our clients --}}
 
     <section class="container mx-auto px-6 py-16">
+
+
         <!-- Header Section -->
         <div class="flex flex-col lg:flex-row gap-12 mb-16">
+            {{-- left side --}}
             <div class="md:w-2/5 w-full flex items-center">
                 <div>
-                    <h2
-                        class="h2 font-bold text-secondary mb-6 relative after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:w-16 after:h-1 after:bg-blue-500">
+                    <h2 class="h2 font-bold text-secondary mb-6 relative text-secondary">
                         Our Honorable Clients
                     </h2>
                     <p class="text-gray-600 text-lg leading-relaxed">
                         We take pride in partnering with industry leaders and innovators. Our collaborations have helped
-                        businesses
-                        transform their digital presence and achieve remarkable growth through cutting-edge solutions.
+                        businesses transform their digital presence and achieve remarkable growth through cutting-edge
+                        solutions.
                     </p>
                 </div>
             </div>
 
             <!-- Client Logos Grid -->
             <div class="md:w-3/5 w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-                @for ($i = 19; $i < 31; $i++)
+                @for ($i = 19; $i < 27; $i++)
                     <div
-                        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center h-32">
+                        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex items-center justify-center h-32">
                         <img src="{{ asset('/frontend/images/clients/client' . $i . '.jpg') }}" alt="Client logo"
                             class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"
                             loading="lazy">
                     </div>
                 @endfor
+
+            <a href="/contact#all-brands">
+                <x-frontend.show-more-button />
+            </a>
             </div>
+
+
+
         </div>
 
+
+
     </section>
+
 
     {{-- blogs --}}
 
