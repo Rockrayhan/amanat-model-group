@@ -24,8 +24,8 @@ Route::get('/', function () {
     return view('frontend.home');
 }) ;
 
-Route::get('/about', function () {
-    return view('frontend.about');
+Route::get('/about/management', function () {
+    return view('frontend.management');
 }) ;
 
 

@@ -43,3 +43,4 @@ Company list:
 5. globe
 6. loader with logo
 7. back to top
+8. aos animation

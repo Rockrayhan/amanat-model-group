@@ -41,7 +41,7 @@
           <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
           <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
           <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">career</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Career</a></li>
         </ul>
       </div>
 

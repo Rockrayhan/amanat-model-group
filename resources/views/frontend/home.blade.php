@@ -267,7 +267,7 @@
             <!-- Right Content -->
             <div class="w-full flex justify-center">
                 <div class="space-y-6 w-full max-w-lg text-center md:text-left">
-                    <h2 class="text-4xl font-bold leading-tight"> Our Founder </h2>
+                    <h3 class="h3 font-bold leading-tight"> Our Founder </h3>
                     <p class="text-lg leading-relaxed">
                         Since our establishment in 1990, Amanat Group has evolved into a diversified business entity with
                         operations spanning manufacturing, technology, healthcare, and infrastructure.
@@ -294,7 +294,7 @@
             <!-- Left Content -->
             <div class="w-full flex justify-center">
                 <div class="space-y-6 w-full max-w-lg text-center md:text-left">
-                    <h2 class="text-4xl font-bold text-sky-700 leading-tight">
+                    <h2 class="text-4xl font-bold text-secondary leading-tight">
                         Vision of Amanat Group
                     </h2>
                     <p class="text-base md:text-lg text-gray-700 leading-relaxed">
