@@ -32,6 +32,21 @@
         @include('frontend.includes.header')
     </header>
 
+    <!-- Loader -->
+    <div id="pageLoader"
+        class="fixed inset-0 bg-white dark:bg-gray-900 z-[9999] flex items-center justify-center opacity-100 transition-opacity duration-500 ease-in-out">
+
+        <div class="flex flex-col items-center space-y-2">
+            <!-- Logo -->
+            <img src="{{ asset('/frontend/images/logo.png') }}" alt="Loading Logo"
+                class="h-52 w-auto animate-pulse rounded-lg shadow" />
+
+            <!-- Spinner -->
+            <span class="loading loading-spinner loading-lg text-primary"></span>
+        </div>
+    </div>
+
+
     <div>
         @yield('content')
     </div>
@@ -44,6 +59,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     {{-- tailwind --}}
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    {{-- loader --}}
+    <script>
+        // Fade out loader after page load
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('pageLoader');
+            loader.classList.add('opacity-0');
+            setTimeout(() => loader.style.display = 'none', 500);
+        });
+    </script>
 
 
     @yield('scripts')
