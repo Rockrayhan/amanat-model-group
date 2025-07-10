@@ -39,10 +39,10 @@ Company list:
 
 1. managemnet page //
 2. contact page //
-3. navbar -> (active link, hover animation, sticky, bg blur, mega menu)
+3. navbar -> (active link, hover animation, sticky //, bg blur, mega menu)
 5. globe
-6. loader with logo
-7. back to top
+6. loader with logo //
+7. back to top //
 8. aos animation
 
 <!-- <x-frontend.show-more-button /> -->

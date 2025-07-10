@@ -13,7 +13,7 @@
             <div class="absolute inset-0 bg-secondary opacity-30"></div>
 
             <div class="relative z-10 text-white px-5 md:px-10  gap-6 max-w-4xl text-left">
-                <h1 class="page-title">
+                <h1 class="page-title font-semibold">
                     CONTACT US
                 </h1>
             </div>
@@ -80,7 +80,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4 py-12">
             <!-- Contact Form -->
-            <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8">
+            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out p-6 md:p-8">
                 <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
                 <form class="space-y-4">
                     <div>
@@ -115,7 +115,7 @@
             </div>
 
             <!-- Contact Information -->
-            <div class="bg-gray-50 rounded-xl shadow-md p-6 md:p-8">
+            <div class="bg-gray-50 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out p-6 md:p-8">
                 <h2 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h2>
 
                 <div class="space-y-6">

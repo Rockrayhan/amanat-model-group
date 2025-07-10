@@ -13,7 +13,7 @@
             <div class="absolute inset-0 bg-secondary opacity-30"></div>
 
             <div class="relative z-10 text-white px-5 md:px-10  gap-6 max-w-4xl text-left">
-                <h1 class="page-title">
+                <h1 class="page-title font-semibold">
                     MANAGEMENT
                 </h1>
             </div>

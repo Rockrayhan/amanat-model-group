@@ -26,6 +26,17 @@
 
 </head>
 
+<!-- Back to Top Button -->
+<button id="backToTopBtn"
+    class="hidden fixed bottom-6 right-6 bg-primary opacity-85 text-white p-4 rounded-full shadow-lg hover:bg-primary/90 transition-all duration-300 z-50"
+    aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+</button>
+
+
 
 <body>
     <header>
@@ -69,6 +80,29 @@
             setTimeout(() => loader.style.display = 'none', 500);
         });
     </script>
+
+    {{-- back to top --}}
+    <script>
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove("hidden");
+            } else {
+                backToTopBtn.classList.add("hidden");
+            }
+        });
+
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+{{-- smooth scroll --}}
+<script src="{{ asset('/frontend/SmoothScroll.js') }}"></script>
 
 
     @yield('scripts')
