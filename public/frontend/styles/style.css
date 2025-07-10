@@ -1,51 +1,49 @@
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 6rem;   /* 16px padding */
-  padding-right: 6rem;
-  max-width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;  /* sm */
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;  /* md */
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px; /* lg */
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px; /* xl */
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px; /* 2xl */
-  }
-}
-
-
-
-html,body {
+html,
+body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     /* color: #301B0E; */
 }
 
 
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6rem; /* 16px padding */
+    padding-right: 6rem;
+    max-width: 100%;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px; /* sm */
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px; /* md */
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px; /* lg */
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px; /* xl */
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px; /* 2xl */
+    }
+}
 
 .center {
     display: flex;
@@ -53,96 +51,92 @@ html,body {
     align-items: center;
 }
 
-
-
 /* =======================
   Font Sizes: Base (Desktop)
 ======================= */
 
 .page-title {
-  font-size: 72px;
-  line-height: 120%;
-  letter-spacing: -1px;
+    font-size: 72px;
+    line-height: 120%;
+    letter-spacing: -1px;
 }
 
 .h1 {
-  font-weight: 600;
-  font-size: 64px;
-  letter-spacing: -0.5px;
-  line-height: 110%;
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: -0.5px;
+    line-height: 110%;
 }
 
 .h2 {
-  font-weight: 600;
-  font-size: 48px;
-  letter-spacing: -1px;
-  line-height: 120%;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 120%;
 }
 
 .h3 {
-  font-size: 32px;
-  line-height: 130%;
-  letter-spacing: 0px;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0px;
 }
 
 .h4 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 140%;
-  letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0px;
 }
 
 .h6 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 150%;
-  letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0px;
 }
 
 .sub-title {
-  font-size: 20px;
-  line-height: 150%;
-  letter-spacing: 0px;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0px;
 }
 
 .p {
-  color: #e4e4e4;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0.5px;
+    color: #e4e4e4;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
 }
-
-
 
 /* ==========================
   Responsive font sizes — Tablet
 ========================== */
 @media (max-width: 1024px) {
-  .page-title {
-    font-size: 52px;
-  }
-  .h1 {
-    font-size: 48px;
-  }
-  .h2 {
-    font-size: 36px;
-  }
-  .h3 {
-    font-size: 28px;
-  }
-  .h4 {
-    font-size: 22px;
-  }
-  .h6 {
-    font-size: 18px;
-  }
-  .sub-title {
-    font-size: 18px;
-  }
-  .p {
-    font-size: 16px;
-  }
+    .page-title {
+        font-size: 52px;
+    }
+    .h1 {
+        font-size: 48px;
+    }
+    .h2 {
+        font-size: 36px;
+    }
+    .h3 {
+        font-size: 28px;
+    }
+    .h4 {
+        font-size: 22px;
+    }
+    .h6 {
+        font-size: 18px;
+    }
+    .sub-title {
+        font-size: 18px;
+    }
+    .p {
+        font-size: 16px;
+    }
 }
 
 /* ==========================
@@ -150,92 +144,80 @@ html,body {
 ========================== */
 
 @media (max-width: 768px) {
-  .page-title {
-    font-size: 38px;
-  }
-  .h1 {
-    font-size: 36px;
-  }
-  .h2 {
-    font-size: 28px;
-  }
-  .h3 {
-    font-size: 24px;
-  }
-  .h4 {
-    font-size: 20px;
-  }
-  .h6 {
-    font-size: 16px;
-  }
-  .sub-title {
-    font-size: 16px;
-  }
-  .p {
-    font-size: 15px;
-  }
+    .page-title {
+        font-size: 38px;
+    }
+    .h1 {
+        font-size: 36px;
+    }
+    .h2 {
+        font-size: 28px;
+    }
+    .h3 {
+        font-size: 24px;
+    }
+    .h4 {
+        font-size: 20px;
+    }
+    .h6 {
+        font-size: 16px;
+    }
+    .sub-title {
+        font-size: 16px;
+    }
+    .p {
+        font-size: 15px;
+    }
 }
 
-
 /* colors */
-
-
 
 /* bg color */
 
 .bg-primary {
-  background-color: #39b54a;
+    background-color: #39b54a;
 }
 
 .bg-secondary {
-  background-color: #00aeef;
+    background-color: #00aeef;
 }
 
 .bg-third {
-  background-color: #2e3192;
+    background-color: #2e3192;
 }
-
-
-
-
 
 /* text color */
 .text-primary {
-  color: #39b54a;
+    color: #39b54a;
 }
 
 .text-secondary {
-  color: #00aeef;
+    color: #00aeef;
 }
 
 .text-third {
-  color: #2e3192;
+    color: #2e3192;
 }
-
-
 
 /* border color */
 .border-primary {
-  color: #39b54a;
+    color: #39b54a;
 }
 
 .border-secondary {
-
-  border: 2px solid #00aeef;
+    border: 2px solid #00aeef;
 }
 
 .border-third {
-  color: #2e3192;
+    color: #2e3192;
 }
-
-
 
 /* btn */
 
 .btn-primary {
-  background-color: #39b54a;
+    background-color: #39b54a;
 }
 
 .btn-secondary {
-  background-color: #00aeef;
+    background-color: #00aeef;
 }

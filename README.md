@@ -27,3 +27,19 @@ Company list:
 2. AMANAT TRADING COOPERATIVE BANK 
 3. AMANAT MODEL AGRO LIMITED 
 4. AMANAT MODEL FOOD AND BEVERAGE LIMITED 
+
+
+
+
+
+
+
+
+
+1. about page
+2. contact page
+3. navbar -> (active link, hover animation, sticky, bg blur, mega menu)
+4. managemnet page
+5. globe
+6. loader with logo
+7. back to top

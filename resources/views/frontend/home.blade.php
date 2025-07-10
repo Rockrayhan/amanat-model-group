@@ -101,7 +101,7 @@
 
     {{-- globe section --}}
     <section>
-<div id="globe"></div>
+        <div id="globe"></div>
 
     </section>
 
@@ -474,12 +474,14 @@
                 </div>
 
                 <!-- Navigation Buttons -->
+                <!-- Navigation Buttons -->
                 <div
-                    class="swiper-button-next bg-sky-400/50 hover:bg-sky-400 text-gray-800 rounded-full w-10 h-10 shadow-md transition-all">
+                    class="swiper-button-next bg-sky-400/50 hover:bg-sky-400 text-gray-800 rounded-full w-12 h-12 shadow-md transition-all flex items-center justify-center">
                 </div>
                 <div
-                    class="swiper-button-prev bg-sky-400/50 hover:bg-sky-400 text-gray-800 rounded-full w-10 h-10 shadow-md transition-all">
+                    class="swiper-button-prev bg-sky-400/50 hover:bg-sky-400 text-gray-800 rounded-full w-12 h-12 shadow-md transition-all flex items-center justify-center">
                 </div>
+
             </div>
         </div>
 
