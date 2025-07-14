@@ -144,8 +144,8 @@
                         </div>
                         <div>
                             <h3 class="font-medium text-gray-900">Email</h3>
-                            <p class="text-gray-600 mt-1">info@company.com</p>
-                            <p class="text-gray-600">support@company.com</p>
+                            <p class="text-gray-600 mt-1">info@amanatmodelgroup.com</p>
+                            <p class="text-gray-600">support@amanatmodelgroup.com.com</p>
                         </div>
                     </div>
 

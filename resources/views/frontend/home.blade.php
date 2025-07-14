@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Amanat Group - Home')
+@section('title', 'Amanat Model Group - Home')
 
 
 @section('content')
@@ -132,105 +132,100 @@
         </h1>
 
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
 
-  <!-- Amanat Model Agro Pvt. Ltd. -->
-  <div
-    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-    <div class="flex gap-4">
-      <img class="h-20 w-20 object-cover rounded-md"
-        src="{{asset('/frontend/images/amanat_agro.jpeg')}}"
-        alt="Amanat Agro Logo">
-      <div>
-        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL AGRO PVT. LTD.</h4>
-        <p class="text-gray-600 leading-relaxed">
-          Advancing sustainable agriculture with innovation, supporting local farmers and promoting eco-friendly practices.
-        </p>
-      </div>
-    </div>
-  </div>
+            <!-- Amanat Model Agro Pvt. Ltd. -->
+            <div
+                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+                <div class="flex gap-4">
+                    <img class="h-20 w-20 object-cover rounded-md" src="{{ asset('/frontend/images/amanat_agro.jpeg') }}"
+                        alt="Amanat Agro Logo">
+                    <div>
+                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL AGRO PVT. LTD.</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            Advancing sustainable agriculture with innovation, supporting local farmers and promoting
+                            eco-friendly practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Amanat Model Security Service Pvt. Ltd. -->
-  <div
-    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-    <div class="flex gap-4">
-      <img class="h-20 w-20 object-cover rounded-md"
-        src=""
-        alt="AMANAT Security">
-      <div>
-        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL SECURITY SERVICE PVT. LTD.</h4>
-        <p class="text-gray-600 leading-relaxed">
-          Providing top-notch security solutions with trained personnel and the latest surveillance technologies.
-        </p>
-      </div>
-    </div>
-  </div>
+            <!-- Amanat Model Security Service Pvt. Ltd. -->
+            <div
+                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+                <div class="flex gap-4">
+                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="AMANAT Security">
+                    <div>
+                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL SECURITY SERVICE PVT. LTD.</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            Providing top-notch security solutions with trained personnel and the latest surveillance
+                            technologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Amanat Model IT Pvt. Ltd. -->
-  <div
-    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-    <div class="flex gap-4">
-      <img class="h-20 w-20 object-cover rounded-md"
-        src=""
-        alt="AMANAT MODEL IT">
-      <div>
-        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL IT PVT. LTD.</h4>
-        <p class="text-gray-600 leading-relaxed">
-          Empowering businesses with digital transformation, software development, and IT consulting services.
-        </p>
-      </div>
-    </div>
-  </div>
+            <!-- Amanat Model IT Pvt. Ltd. -->
+            <div
+                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+                <div class="flex gap-4">
+                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="AMANAT MODEL IT">
+                    <div>
+                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL IT PVT. LTD.</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            Empowering businesses with digital transformation, software development, and IT consulting
+                            services.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Amanat Model Trading House Pvt. Ltd. -->
-  <div
-    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-    <div class="flex gap-4">
-      <img class="h-20 w-20 object-cover rounded-md"
-        src=""
-        alt="AMANAT Trading House">
-      <div>
-        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL TRADING HOUSE PVT. LTD.</h4>
-        <p class="text-gray-600 leading-relaxed">
-          A dynamic trading company specializing in quality goods distribution, import/export, and business solutions.
-        </p>
-      </div>
-    </div>
-  </div>
+            <!-- Amanat Model Trading House Pvt. Ltd. -->
+            <div
+                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+                <div class="flex gap-4">
+                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="AMANAT Trading House">
+                    <div>
+                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL TRADING HOUSE PVT. LTD.</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            A dynamic trading company specializing in quality goods distribution, import/export, and
+                            business solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Amanat Model Food’s & Beverage Pvt. Ltd. -->
-  <div
-    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-    <div class="flex gap-4">
-      <img class="h-20 w-20 object-cover rounded-md"
-        src=""
-        alt="Amanat Food & Beverage">
-      <div>
-        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL FOOD’S & BEVERAGE PVT. LTD.</h4>
-        <p class="text-gray-600 leading-relaxed">
-          Delivering quality food and beverage products with a focus on health, hygiene, and consumer satisfaction.
-        </p>
-      </div>
-    </div>
-  </div>
+            <!-- Amanat Model Food’s & Beverage Pvt. Ltd. -->
+            <div
+                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+                <div class="flex gap-4">
+                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="Amanat Food & Beverage">
+                    <div>
+                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL FOOD’S & BEVERAGE PVT. LTD.</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            Delivering quality food and beverage products with a focus on health, hygiene, and consumer
+                            satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Amanat Model Properties Pvt. Ltd. -->
-  <div
-    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-    <div class="flex gap-4">
-      <img class="h-20 w-20 object-cover rounded-md"
-        src=""
-        alt="Amanat Real Estate">
-      <div>
-        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL PROPERTIES PVT. LTD.</h4>
-        <p class="text-gray-600 leading-relaxed">
-          Transforming skylines with reliable, innovative, and sustainable real estate development projects.
-        </p>
-      </div>
-    </div>
-  </div>
+            <!-- Amanat Model Properties Pvt. Ltd. -->
+            <div
+                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+                <div class="flex gap-4">
+                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="Amanat Real Estate">
+                    <div>
+                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL PROPERTIES PVT. LTD.</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            Transforming skylines with reliable, innovative, and sustainable real estate development
+                            projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-</div>
+        </div>
 
 
     </section>
@@ -308,6 +303,62 @@
         </div>
     </section>
 
+
+    {{-- mission --}}
+    <section class="py-16 bg-white">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-4 md:px-8">
+        <!-- Right Image (shown first on mobile) -->
+        <div class="p-6 order-1 md:order-2">
+            <img src="{{ asset('/frontend/images/mission.jpg') }}" alt="Mission of Amanat Group"
+                class="w-full h-auto md:h-[400px] object-cover p-3 rounded-2xl">
+        </div>
+
+        <!-- Left Content -->
+        <div class="w-full flex justify-center order-2 md:order-1">
+            <div class="space-y-6 w-full max-w-lg text-center md:text-left">
+                <h2 class="h2 font-bold text-secondary leading-tight">
+                    Mission of Amanat Group
+                </h2>
+                <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                    At <strong>Amanat Model Foundation</strong>, our mission is to create sustainable value through ethical business practices, innovation, and social responsibility.
+                </p>
+                <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                    We are committed to:
+                </p>
+                <ul class="text-base md:text-lg text-gray-700 leading-relaxed space-y-3 pl-5">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Delivering exceptional quality products and services</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Fostering innovation and continuous improvement</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Empowering our employees and communities</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Maintaining the highest standards of integrity</span>
+                    </li>
+                </ul>
+
+                {{-- btn primary --}}
+                <x-frontend.show-more-button />
+            </div>
+        </div>
+    </div>
+</section>
+
     {{-- vision --}}
 
     <section class="py-16 bg-gray-50">
@@ -382,9 +433,9 @@
                     </div>
                 @endfor
 
-            <a href="/contact#all-brands">
-                <x-frontend.show-more-button />
-            </a>
+                <a href="/contact#all-brands">
+                    <x-frontend.show-more-button />
+                </a>
             </div>
 
 
