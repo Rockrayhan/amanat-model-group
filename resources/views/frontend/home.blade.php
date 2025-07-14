@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Dashboard')
+@section('title', 'Amanat Group - Home')
 
 
 @section('content')
@@ -39,7 +39,7 @@
 
                         <div class="relative z-10 text-white px-5 md:px-10 flex flex-col gap-6 max-w-4xl text-left">
                             <h1 class="md:text-6xl font-semibold text-3xl banner-title">
-                                AMANAT MODEL FOOD AND BEVERAGE LIMITED
+                                AMANAT MODEL FOOD AND BEVERAGE Pvt. LIMITED
                             </h1>
                             <span class="text-xl text-second">
                                 Explore the science, practices, and innovations shaping for your sustainable life.
@@ -78,7 +78,7 @@
 
                         <div class="relative z-10 text-white px-5 md:px-10 flex flex-col gap-6 max-w-4xl text-left">
                             <h1 class="md:text-6xl font-semibold text-3xl banner-title">
-                                AMANAT MODEL AGRO LIMITED
+                                AMANAT MODEL AGRO Pvt. LIMITED
                             </h1>
                             <span class="text-xl text-second">
                                 Explore the science, practices, and innovations shaping soil health and
@@ -100,14 +100,14 @@
 
 
     {{-- globe section --}}
-    <section>
+    {{-- <section>
         <div id="globe"></div>
 
-    </section>
+    </section> --}}
 
 
     {{-- short description --}}
-    <section class="bg-primary text-white">
+    <section class="bg-secondary text-white">
         <p class="container text-center px-10 py-12 w-4/5 text-xl">
             Amanat Model Group is a forward-thinking and diversified business group rooted in strong values and visionary
             leadership. With operations across key sectors including textiles, finance, agriculture, healthcare, and
@@ -121,10 +121,10 @@
     {{-- our brands --}}
 
     <section class="container mx-auto px-4 py-16">
-        <h1 class="h3 font-bold text-center text-primary mb-10">
-            OUR BRANDS & SOLUTIONS
+        <h1 class="h3 font-bold text-center text-secondary mb-10">
+            OUR BRANDS & COMPANIES
 
-            <span class="text-white bg-primary py-2 inline-block rounded w-[400px]">
+            <span class="text-white bg-secondary py-2 inline-block rounded w-[400px]">
                 <span id="brandText" class="inline-block w-full text-center animate__animated animate__slower">
                     <!-- Brand will appear here -->
                 </span>
@@ -132,81 +132,106 @@
         </h1>
 
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
 
-            <!-- Card 1 -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+  <!-- Amanat Model Agro Pvt. Ltd. -->
+  <div
+    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+    <div class="flex gap-4">
+      <img class="h-20 w-20 object-cover rounded-md"
+        src="{{asset('/frontend/images/amanat_agro.jpeg')}}"
+        alt="Amanat Agro Logo">
+      <div>
+        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL AGRO PVT. LTD.</h4>
+        <p class="text-gray-600 leading-relaxed">
+          Advancing sustainable agriculture with innovation, supporting local farmers and promoting eco-friendly practices.
+        </p>
+      </div>
+    </div>
+  </div>
 
-                <div class="flex  gap-4 ">
-                    <img class="h-20 w-20 object-cover rounded-md"
-                        src="https://cdn.vectorstock.com/i/1000v/40/00/foundation-logo-template-design-vector-38234000.jpg"
-                        alt="Amanat Model Foundation Logo">
-                    <div>
-                        <h4 class="text-xl font-semibold text-primary mb-1"> AMANAT MODEL FOUNDATION </h4>
-                        <p class="text-gray-600  leading-relaxed">
-                            A trusted platform dedicated to building better futures through community-focused initiatives
-                            and education-first programs.
-                        </p>
-                    </div>
-                </div>
+  <!-- Amanat Model Security Service Pvt. Ltd. -->
+  <div
+    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+    <div class="flex gap-4">
+      <img class="h-20 w-20 object-cover rounded-md"
+        src=""
+        alt="AMANAT Security">
+      <div>
+        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL SECURITY SERVICE PVT. LTD.</h4>
+        <p class="text-gray-600 leading-relaxed">
+          Providing top-notch security solutions with trained personnel and the latest surveillance technologies.
+        </p>
+      </div>
+    </div>
+  </div>
 
-            </div>
-            <!-- Card 2 -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+  <!-- Amanat Model IT Pvt. Ltd. -->
+  <div
+    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+    <div class="flex gap-4">
+      <img class="h-20 w-20 object-cover rounded-md"
+        src=""
+        alt="AMANAT MODEL IT">
+      <div>
+        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL IT PVT. LTD.</h4>
+        <p class="text-gray-600 leading-relaxed">
+          Empowering businesses with digital transformation, software development, and IT consulting services.
+        </p>
+      </div>
+    </div>
+  </div>
 
-                <div class="flex  gap-4 ">
-                    <img class="h-20 w-20 object-cover rounded-md"
-                        src="https://media.istockphoto.com/id/866393210/vector/farm-icon.jpg?s=612x612&w=0&k=20&c=CZnGt4ER-NjDGJJMzyYaGEz3ko9BoYnuf2vNRp-cMfc="
-                        alt="Amanat Agro Logo">
-                    <div>
-                        <h4 class="text-xl font-semibold text-primary mb-1"> AMANAT MODEL AGRO LIMITED </h4>
-                        <p class="text-gray-600  leading-relaxed">
-                            Committed to modern agriculture, sustainable farming, and empowering local farmers with
-                            cutting-edge solutions.
-                        </p>
-                    </div>
-                </div>
+  <!-- Amanat Model Trading House Pvt. Ltd. -->
+  <div
+    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+    <div class="flex gap-4">
+      <img class="h-20 w-20 object-cover rounded-md"
+        src=""
+        alt="AMANAT Trading House">
+      <div>
+        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL TRADING HOUSE PVT. LTD.</h4>
+        <p class="text-gray-600 leading-relaxed">
+          A dynamic trading company specializing in quality goods distribution, import/export, and business solutions.
+        </p>
+      </div>
+    </div>
+  </div>
 
-            </div>
-            <!-- Card 3 -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+  <!-- Amanat Model Food’s & Beverage Pvt. Ltd. -->
+  <div
+    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+    <div class="flex gap-4">
+      <img class="h-20 w-20 object-cover rounded-md"
+        src=""
+        alt="Amanat Food & Beverage">
+      <div>
+        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL FOOD’S & BEVERAGE PVT. LTD.</h4>
+        <p class="text-gray-600 leading-relaxed">
+          Delivering quality food and beverage products with a focus on health, hygiene, and consumer satisfaction.
+        </p>
+      </div>
+    </div>
+  </div>
 
-                <div class="flex  gap-4 ">
-                    <img class="h-20 w-20 object-cover rounded-md"
-                        src="https://static.vecteezy.com/system/resources/previews/048/782/554/non_2x/trading-logo-design-free-vector.jpg"
-                        alt="Amanat Trading Logo">
-                    <div>
-                        <h4 class="text-xl font-semibold text-primary mb-1"> AMANAT TRADING COOPERATIVE BANK </h4>
-                        <p class="text-gray-600  leading-relaxed">
-                            A forward-thinking cooperative bank enabling secure, accessible, and inclusive financial
-                            services across regions.
-                        </p>
-                    </div>
-                </div>
+  <!-- Amanat Model Properties Pvt. Ltd. -->
+  <div
+    class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+    <div class="flex gap-4">
+      <img class="h-20 w-20 object-cover rounded-md"
+        src=""
+        alt="Amanat Real Estate">
+      <div>
+        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL PROPERTIES PVT. LTD.</h4>
+        <p class="text-gray-600 leading-relaxed">
+          Transforming skylines with reliable, innovative, and sustainable real estate development projects.
+        </p>
+      </div>
+    </div>
+  </div>
 
-            </div>
-            <!-- Card 4 -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
+</div>
 
-                <div class="flex  gap-4 ">
-                    <img class="h-20 w-20 object-cover rounded-md"
-                        src="https://img.freepik.com/premium-vector/food-beverage-logo-design-inspirations_527727-272.jpg"
-                        alt="Amanat Food Logo">
-                    <div>
-                        <h4 class="text-xl font-semibold text-primary mb-1"> AMANAT MODEL FOOD & BEVERAGE LIMITED </h4>
-                        <p class="text-gray-600  leading-relaxed">
-                            Delivering high-quality food and beverage products that blend taste, nutrition, and safety at
-                            every level.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
 
     </section>
 

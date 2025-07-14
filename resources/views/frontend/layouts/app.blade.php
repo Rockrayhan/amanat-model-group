@@ -3,7 +3,10 @@
 
 <head>
     <title>@yield('title', 'Amanat Group')</title>
-    <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}">
+
+    {{-- favicon --}}
+      <link rel="icon" type="image/x-icon" href="{{asset('frontend/images/logo2.png')}}">
+
     {{-- tailwind --}}
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -11,8 +14,8 @@
     <link rel="stylesheet" href="{{ asset('/frontend/styles/style.css') }}">
 
 
+
     {{-- Daisy UI --}}
-    {{-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" /> --}}
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
 
@@ -28,7 +31,7 @@
 
 <!-- Back to Top Button -->
 <button id="backToTopBtn"
-    class="hidden fixed bottom-6 right-6 bg-primary opacity-85 text-white p-4 rounded-full shadow-lg hover:bg-primary/90 transition-all duration-300 z-50"
+    class="hidden fixed bottom-6 right-6 bg-secondary opacity-80 text-white p-4 rounded-full shadow-2xl z-50"
     aria-label="Back to top">
     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         stroke-width="2">
@@ -53,7 +56,7 @@
                 class="h-52 w-auto animate-pulse rounded-lg shadow" />
 
             <!-- Spinner -->
-            <span class="loading loading-spinner loading-lg text-primary"></span>
+            <span class="loading loading-spinner loading-lg text-secondary"></span>
         </div>
     </div>
 

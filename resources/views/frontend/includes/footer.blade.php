@@ -1,4 +1,4 @@
-<div class="bg-third text-gray-300 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+<div class="bg-[#21409a] text-gray-300 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
   <div class="container mx-auto">
     <!-- Main Footer Content -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
@@ -84,7 +84,7 @@
     </div>
 
     <!-- Divider -->
-    <div class="border-t border-gray-800 my-8"></div>
+    <div class="border-t border-gray-400 my-8"></div>
 
     <!-- Copyright & Legal -->
     <div class="flex flex-col md:flex-row justify-between items-center">

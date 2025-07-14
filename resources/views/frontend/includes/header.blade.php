@@ -1,13 +1,13 @@
-<nav class="px-5 relative z-50 md:mb-[7rem]">
+<nav class="relative z-50 md:mb-[6rem]">
     <div class="fixed top-0 left-0 w-full shadow-lg z-50 bg-[rgba(255,255,255,0.86)] backdrop-blur-sm">
-        <div class="navbar container px-5 mx-auto max-h-[7rem]">
+        <div class="navbar px-8 flex gap-5 max-h-[6rem]">
             <!-- Navbar Start -->
             <div class="navbar-start flex justify-between items-center w-full lg:flex-1">
 
 
                 <!-- Logo -->
                 <a href="/" class="flex items-center h-full ">
-                    <img src="{{ asset('/frontend/images/logo_text.png') }}" alt="Logo"
+                    <img src="{{ asset('/frontend/images/nav_logo.png') }}" alt="Logo"
                         class="h-20 md:h-24 lg:h-28 xl:h-32 w-auto max-w-[12rem] md:max-w-[16rem] lg:max-w-[18rem] object-contain transition-all duration-300" />
                 </a>
 
@@ -39,12 +39,12 @@
                             <details>
                                 <summary>Our Companies</summary>
                                 <ul class="pl-4 space-y-1">
-                                    <li><a href="#">Amanat Model Agro Ltd.</a></li>
-                                    <li><a href="#">Amanat Model Security Service Ltd.</a></li>
-                                    <li><a href="#">Amanat Model IT Ltd.</a></li>
-                                    <li><a href="#">Amanat Model Trading House Ltd.</a></li>
-                                    <li><a href="#">Amanat Model Food’s & Beverage Ltd.</a></li>
-                                    <li><a href="#">Amanat Model Properties Ltd.</a></li>
+                                    <li><a href="#">Amanat Model Agro Pvt. Ltd.</a></li>
+                                    <li><a href="#">Amanat Model Security Service Pvt. Ltd.</a></li>
+                                    <li><a href="#">Amanat Model IT Pvt. Ltd.</a></li>
+                                    <li><a href="#">Amanat Model Trading House Pvt. Ltd.</a></li>
+                                    <li><a href="#">Amanat Model Food’s & Beverage Pvt. Ltd.</a></li>
+                                    <li><a href="#">Amanat Model Properties Pvt. Ltd.</a></li>
                                 </ul>
                             </details>
                         </li>
@@ -119,15 +119,15 @@
                         <div
                             class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-96 z-50 space-y-2">
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Agro Ltd.</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Agro Pvt. Ltd.</a>
                                 <a href="#" class="block hover:text-sky-600 transition">Amanat Model Security
-                                    Service Ltd.</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model IT Ltd.</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Trading House
+                                    Service Pvt. Ltd.</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model IT Pvt. Ltd.</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Trading House Pvt.
                                     Ltd.</a>
                                 <a href="#" class="block hover:text-sky-600 transition">Amanat Model Food’s &
-                                    Beverage Ltd.</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Properties
+                                    Beverage Pvt. Ltd.</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Properties Pvt.
                                     Ltd.</a>
                             </div>
                         </div>
