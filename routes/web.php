@@ -31,6 +31,10 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 }) ;
 
+Route::get('/demo', function () {
+    return view('frontend.demo');
+}) ;
+
 
 
 

@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Dashboard')
+@section('title', 'Amanat Group - Management')
 
 @section('content')
 

@@ -39,7 +39,7 @@
 
                         <div class="relative z-10 text-white px-5 md:px-10 flex flex-col gap-6 max-w-4xl text-left">
                             <h1 class="md:text-6xl font-semibold text-3xl banner-title">
-                                AMANAT MODEL FOOD AND BEVERAGE Pvt. LIMITED
+                                AMANAT MODEL FOOD AND BEVERAGE PVT. LIMITED
                             </h1>
                             <span class="text-xl text-second">
                                 Explore the science, practices, and innovations shaping for your sustainable life.
@@ -78,7 +78,7 @@
 
                         <div class="relative z-10 text-white px-5 md:px-10 flex flex-col gap-6 max-w-4xl text-left">
                             <h1 class="md:text-6xl font-semibold text-3xl banner-title">
-                                AMANAT MODEL AGRO Pvt. LIMITED
+                                AMANAT MODEL AGRO PVT. LIMITED
                             </h1>
                             <span class="text-xl text-second">
                                 Explore the science, practices, and innovations shaping soil health and
@@ -306,58 +306,67 @@
 
     {{-- mission --}}
     <section class="py-16 bg-white">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-4 md:px-8">
-        <!-- Right Image (shown first on mobile) -->
-        <div class="p-6 order-1 md:order-2">
-            <img src="{{ asset('/frontend/images/mission.jpg') }}" alt="Mission of Amanat Group"
-                class="w-full h-auto md:h-[400px] object-cover p-3 rounded-2xl">
-        </div>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-4 md:px-8">
+            <!-- Right Image (shown first on mobile) -->
+            <div class="p-6 order-1 md:order-2">
+                <img src="{{ asset('/frontend/images/mission.jpg') }}" alt="Mission of Amanat Group"
+                    class="w-full h-auto md:h-[400px] object-cover p-3 rounded-2xl">
+            </div>
 
-        <!-- Left Content -->
-        <div class="w-full flex justify-center order-2 md:order-1">
-            <div class="space-y-6 w-full max-w-lg text-center md:text-left">
-                <h2 class="h2 font-bold text-secondary leading-tight">
-                    Mission of Amanat Group
-                </h2>
-                <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                    At <strong>Amanat Model Foundation</strong>, our mission is to create sustainable value through ethical business practices, innovation, and social responsibility.
-                </p>
-                <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                    We are committed to:
-                </p>
-                <ul class="text-base md:text-lg text-gray-700 leading-relaxed space-y-3 pl-5">
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Delivering exceptional quality products and services</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Fostering innovation and continuous improvement</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Empowering our employees and communities</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Maintaining the highest standards of integrity</span>
-                    </li>
-                </ul>
+            <!-- Left Content -->
+            <div class="w-full flex justify-center order-2 md:order-1">
+                <div class="space-y-6 w-full max-w-lg text-center md:text-left">
+                    <h2 class="h2 font-bold text-secondary leading-tight">
+                        Mission of Amanat Group
+                    </h2>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        At <strong>Amanat Model Foundation</strong>, our mission is to create sustainable value through
+                        ethical business practices, innovation, and social responsibility.
+                    </p>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        We are committed to:
+                    </p>
+                    <ul class="text-base md:text-lg text-gray-700 leading-relaxed space-y-3 pl-5">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
+                            <span>Delivering exceptional quality products and services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
+                            <span>Fostering innovation and continuous improvement</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
+                            <span>Empowering our employees and communities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
+                            <span>Maintaining the highest standards of integrity</span>
+                        </li>
+                    </ul>
 
-                {{-- btn primary --}}
-                <x-frontend.show-more-button />
+                    {{-- btn primary --}}
+                    <x-frontend.show-more-button />
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     {{-- vision --}}
 

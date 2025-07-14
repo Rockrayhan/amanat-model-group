@@ -1,6 +1,6 @@
-<nav class="relative z-50 md:mb-[6rem]">
+<nav class="relative z-50 md:mb-[5.3rem]">
     <div class="fixed top-0 left-0 w-full shadow-lg z-50 bg-[rgba(255,255,255,0.86)] backdrop-blur-sm">
-        <div class="navbar px-8 flex gap-5 max-h-[6rem]">
+        <div class="navbar px-8 py-3 flex gap-5 max-h-[6rem]">
             <!-- Navbar Start -->
             <div class="navbar-start flex justify-between items-center w-full lg:flex-1">
 
@@ -8,7 +8,7 @@
                 <!-- Logo -->
                 <a href="/" class="flex items-center h-full ">
                     <img src="{{ asset('/frontend/images/nav_logo.png') }}" alt="Logo"
-                        class="h-20 md:h-24 lg:h-28 xl:h-32 w-auto max-w-[12rem] md:max-w-[16rem] lg:max-w-[18rem] object-contain transition-all duration-300" />
+                        class="h-auto w-auto max-w-[12rem] md:max-w-[16rem] lg:max-w-[22rem]" />
                 </a>
 
                 <!-- Mobile Menu -->
@@ -27,7 +27,7 @@
                             <details>
                                 <summary>About Us</summary>
                                 <ul class="pl-4 space-y-1">
-                                    <li><a href="#">About Founder</a></li>
+                                    <li><a href="/demo">About Founder</a></li>
                                     <li><a href="#">Chairman's Message</a></li>
                                     <li><a href="#">Mission & Vision</a></li>
                                     <li><a href="#">Our Values</a></li>
@@ -53,9 +53,9 @@
                             <details>
                                 <summary>Media</summary>
                                 <ul class="pl-4 space-y-1">
-                                    <li><a href="/media/news">News & Events</a></li>
-                                    <li><a href="/media/photo">Photo</a></li>
-                                    <li><a href="/media/video">Video</a></li>
+                                    <li><a href="#">News & Events</a></li>
+                                    <li><a href="#">Photo</a></li>
+                                    <li><a href="#">Video</a></li>
                                     <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
                                     <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
                                 </ul>
@@ -96,7 +96,7 @@
                         <div
                             class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-80 z-50 space-y-2">
-                                <a href="#" class="block hover:text-sky-600 transition">About Founder</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">About Founder</a>
                                 <a href="#" class="block hover:text-sky-600 transition">Chairman's Message</a>
                                 <a href="#" class="block hover:text-sky-600 transition">Mission & Vision</a>
                                 <a href="#" class="block hover:text-sky-600 transition">Our Values</a>
@@ -149,9 +149,9 @@
                         <div
                             class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-64 z-50 space-y-2">
-                                <a href="/media/news" class="block hover:text-sky-600 transition">News & Events</a>
-                                <a href="/media/photo" class="block hover:text-sky-600 transition">Photo</a>
-                                <a href="/media/video" class="block hover:text-sky-600 transition">Video</a>
+                                <a href="#" class="block hover:text-sky-600 transition">News & Events</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Photo</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Video</a>
                                 <a href="https://facebook.com" target="_blank"
                                     class="block hover:text-sky-600 transition">Facebook</a>
                                 <a href="https://youtube.com" target="_blank"
