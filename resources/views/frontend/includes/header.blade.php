@@ -1,24 +1,54 @@
-<nav class="px-5 relative z-50 mb-[7rem]">
+<nav class="px-5 relative z-50 md:mb-[7rem]">
     <div class="fixed top-0 left-0 w-full shadow-lg z-50 bg-[rgba(255,255,255,0.86)] backdrop-blur-sm">
-
-        <div class="navbar container mx-auto px-5 max-h-[7rem]">
-
-
+        <div class="navbar container px-5 mx-auto max-h-[7rem]">
             <!-- Navbar Start -->
-            <div class="navbar-start">
+            <div class="navbar-start flex justify-between items-center w-full lg:flex-1">
+
+
+                <!-- Logo -->
+                <a href="/" class="flex items-center h-full ">
+                    <img src="{{ asset('/frontend/images/logo_text.png') }}" alt="Logo"
+                        class="h-20 md:h-24 lg:h-28 xl:h-32 w-auto max-w-[12rem] md:max-w-[16rem] lg:max-w-[18rem] object-contain transition-all duration-300" />
+                </a>
+
                 <!-- Mobile Menu -->
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                <div class="dropdown dropdown-end lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-64 p-3 shadow space-y-1 text-sm font-medium">
+                        class="menu menu-sm dropdown-content mt-4 z-[999] right-0 bg-base-100 rounded-box w-64 p-3 shadow space-y-1 text-sm font-medium">
                         <li><a href="/">Home</a></li>
-
+                        <li>
+                            <details>
+                                <summary>About Us</summary>
+                                <ul class="pl-4 space-y-1">
+                                    <li><a href="#">About Founder</a></li>
+                                    <li><a href="#">Chairman's Message</a></li>
+                                    <li><a href="#">Mission & Vision</a></li>
+                                    <li><a href="#">Our Values</a></li>
+                                    <li><a href="#">Board of Corporate Directors</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Our Companies</summary>
+                                <ul class="pl-4 space-y-1">
+                                    <li><a href="#">Amanat Model Agro Ltd.</a></li>
+                                    <li><a href="#">Amanat Model Security Service Ltd.</a></li>
+                                    <li><a href="#">Amanat Model IT Ltd.</a></li>
+                                    <li><a href="#">Amanat Model Trading House Ltd.</a></li>
+                                    <li><a href="#">Amanat Model Food’s & Beverage Ltd.</a></li>
+                                    <li><a href="#">Amanat Model Properties Ltd.</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a href="#">Our Brands</a></li>
                         <li>
                             <details>
                                 <summary>Media</summary>
@@ -31,57 +61,93 @@
                                 </ul>
                             </details>
                         </li>
-
                         <li>
                             <details>
-                                <summary>Our Companies</summary>
+                                <summary>CSR</summary>
                                 <ul class="pl-4 space-y-1">
-                                    <li><a href="/business/company1">Amanat Model Foundation</a></li>
-                                    <li><a href="/business/company2">Amanat Trading Cooperative</a></li>
-                                    <li><a href="/business/company3">Amanat Model Agro Ltd</a></li>
+                                    <li><a href="#">Foundation</a></li>
                                 </ul>
                             </details>
                         </li>
-
-                        <li><a href="/management">Management</a></li>
-                        <li><a href="/responsibility">Our Responsibility</a></li>
-
-                        <li>
-                            <details>
-                                <summary>About</summary>
-                                <ul class="pl-4 space-y-1">
-                                    <li><a href="/about/management">Management</a></li>
-                                    <li><a href="/about/sustainability">Sustainability</a></li>
-                                </ul>
-                            </details>
-                        </li>
-
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
 
 
-                <!-- Logo -->
-                <a class="center" href="/">
-                    <img class="md:h-40 h-24 w-auto" src="{{ asset('/frontend/images/logo.png') }}" alt="Logo">
-                </a>
-            </div>
 
+            </div>
 
             <!-- Navbar Center (Desktop) -->
             <div class="navbar-center hidden lg:flex">
-                <ul class="flex gap-10 items-center h4 font-normal">
-
+                <ul class="flex gap-10 items-center h6 font-normal">
                     <!-- Home -->
                     <li><a href="/" class="hover:text-sky-600 transition-all duration-200">Home</a></li>
 
-                    <!-- Media Mega Menu -->
+                    <!-- About Us -->
                     <li class="relative group">
-                        <span class="cursor-pointer hover:text-sky-600 transition-all duration-200">Media</span>
-
-                        <!-- Hover Box -->
+                        <span class="flex items-center cursor-pointer hover:text-sky-600 transition-all duration-200">
+                            About Us
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
                         <div
-                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 ease-in-out">
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
+                            <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-80 z-50 space-y-2">
+                                <a href="#" class="block hover:text-sky-600 transition">About Founder</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Chairman's Message</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Mission & Vision</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Our Values</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Board of Corporate
+                                    Directors</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Our Companies -->
+                    <li class="relative group">
+                        <span class="flex items-center cursor-pointer hover:text-sky-600 transition-all duration-200">
+                            Our Companies
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                        <div
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
+                            <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-96 z-50 space-y-2">
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Agro Ltd.</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Security
+                                    Service Ltd.</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model IT Ltd.</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Trading House
+                                    Ltd.</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Food’s &
+                                    Beverage Ltd.</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Properties
+                                    Ltd.</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Our Brands -->
+                    <li><a href="#" class="hover:text-sky-600 transition-all duration-200">Our Brands</a></li>
+
+                    <!-- Media -->
+                    <li class="relative group">
+                        <span class="flex items-center cursor-pointer hover:text-sky-600 transition-all duration-200">
+                            Media
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                        <div
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-64 z-50 space-y-2">
                                 <a href="/media/news" class="block hover:text-sky-600 transition">News & Events</a>
                                 <a href="/media/photo" class="block hover:text-sky-600 transition">Photo</a>
@@ -94,68 +160,57 @@
                         </div>
                     </li>
 
-                    <!-- Our Companies Mega Menu -->
+                    <!-- CSR -->
                     <li class="relative group">
-                        <span class="cursor-pointer hover:text-sky-600 transition-all duration-200">Our Companies</span>
+                        <span class="flex items-center cursor-pointer hover:text-sky-600 transition-all duration-200">
+                            CSR
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
                         <div
-                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 ease-in-out w-96 center">
-                            <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 z-50 center flex-col gap-10">
-                                <a href="/business/company1" class="block hover:text-sky-600 transition flex">
-                                    <img class="h-20 w-20" src="{{ asset('/frontend/images/logo2.png') }}"
-                                        alt="Amanat Model Logo">
-                                    <h6 class="h6"> AMANAT MODEL FOUNDATION </h6>
-                                </a>
-                                <a href="/business/company2" class="block hover:text-sky-600 transition flex">
-                                    <img class="h-20 w-20" src="{{ asset('/frontend/images/logo2.jpeg') }}"
-                                        alt="Amanat Model Logo">
-                                    <h6 class="h6"> AMANAT TRADING COOPERATIVE </h6>
-                                </a>
-                                <a href="/business/company3" class="block hover:text-sky-600 transition flex">
-                                    <img class="h-20 w-20" src="{{ asset('/frontend/images/logo3.jpeg') }}"
-                                        alt="Amanat Model Logo">
-                                    <h6 class="h6"> AMANAT MODEL AGRO LIMITED </h6>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Responsibility -->
-                    <li><a href="/responsibility" class="hover:text-sky-600 transition-all duration-200">Our
-                            Responsibility</a></li>
-
-                    <!-- About Mega Menu -->
-                    <li class="relative group">
-                        <span class="cursor-pointer hover:text-sky-600 transition-all duration-200">About</span>
-                        <div
-                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 ease-in-out">
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-64 z-50 space-y-2">
-                                <a href="/about/management" class="block hover:text-sky-600 transition">Management</a>
-                                <a href="/about/sustainability"
-                                    class="block hover:text-sky-600 transition">Sustainability</a>
+                                <a href="#" class="block hover:text-sky-600 transition">Foundation</a>
                             </div>
                         </div>
                     </li>
 
+                    <!-- Contact Us -->
+                    <li>
+
+                        <a class="inline-flex items-center gap-1 border-2 border-gray-600 px-6 py-3 hover:bg-gray-200 transition-all duration-200 cursor-pointer group"
+                            href="/contact">
+                            <span>Contact Us</span>
+                            <span class="transform transition-transform duration-300 group-hover:translate-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                </svg>
+                            </span>
+                        </a>
+
+                    </li>
                 </ul>
             </div>
 
-
             <!-- Navbar End -->
-            <div class="navbar-end hidden md:flex">
+            {{-- <div class="navbar-end hidden lg:flex">
                 <a class="inline-flex items-center gap-1 border-2 border-gray-600 px-6 py-3 hover:bg-gray-200 transition-all duration-200 cursor-pointer group"
                     href="/contact">
                     <span>Contact Us</span>
                     <span class="transform transition-transform duration-300 group-hover:translate-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-5 h-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                         </svg>
                     </span>
                 </a>
-
-            </div>
-
+            </div> --}}
         </div>
     </div>
 </nav>
