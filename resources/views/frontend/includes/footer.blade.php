@@ -49,10 +49,13 @@
       <div>
         <h3 class="text-lg font-semibold text-white mb-4">Our Businesses</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">AMANAT Model Foundation</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">AMANAT Model Agro</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">AMANAT Trading Cooperative</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">AMANAT Food & Beverage</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Amanat Model Agro Pvt. Ltd.</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Amanat Model Security Service Pvt. Ltd.</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Amanat Model IT Pvt. Ltd.</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Amanat Model Trading House Pvt. Ltd.</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Amanat Model Food's & Beverage Pvt. Ltd.</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Amanat Model Properties Pvt. Ltd.</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Amanat Trading Corporative Bank Pvt. Ltd.</a></li>
         </ul>
       </div>
 
@@ -89,7 +92,7 @@
     <!-- Copyright & Legal -->
     <div class="flex flex-col md:flex-row justify-between items-center">
       <p class="text-gray-300 text-sm mb-4 md:mb-0">
-        &copy; 2024 AMANAT MODEL GROUP. All rights reserved.
+        &copy; 2025 AMANAT MODEL GROUP. All rights reserved.
       </p>
       <div class="flex space-x-6">
         <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors">Privacy Policy</a>

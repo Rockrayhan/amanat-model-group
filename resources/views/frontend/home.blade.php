@@ -7,7 +7,7 @@
 
     {{-- banner --}}
 
-    <div class="h-[90vh]">
+    <div class="h-[95vh]">
         <div class="swiper bannerSwiper h-full w-full"> <!-- full height & width -->
             <div class="swiper-wrapper h-full"> <!-- full height -->
                 {{-- slide 1 --}}
@@ -57,7 +57,8 @@
 
                         <div class="relative z-10 text-white px-5 md:px-10 flex flex-col gap-6 max-w-4xl text-left">
                             <h1 class="md:text-6xl font-semibold text-3xl banner-title">
-                                AMANAT TRADING COOPERATIVE BANK
+                                {{-- AMANAT TRADING COOPERATIVE BANK --}}
+                                AMANAT MODEL TRADING HOUSE PVT. LTD
                             </h1>
                             <span class="text-xl text-second">
                                 Explore the science, practices, and innovations shaping soil health and
@@ -437,7 +438,7 @@
                     <div
                         class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex items-center justify-center h-32">
                         <img src="{{ asset('/frontend/images/clients/client' . $i . '.jpg') }}" alt="Client logo"
-                            class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"
+                            class="max-h-16 w-auto object-contain"
                             loading="lazy">
                     </div>
                 @endfor

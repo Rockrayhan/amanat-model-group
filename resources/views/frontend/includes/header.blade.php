@@ -1,14 +1,13 @@
-<nav class="relative z-50 md:mb-[5.3rem]">
+<nav class="relative z-50 md:mb-[4rem]">
     <div class="fixed top-0 left-0 w-full shadow-lg z-50 bg-[rgba(255,255,255,0.86)] backdrop-blur-sm">
-        <div class="navbar px-8 py-3 flex gap-5 max-h-[6rem]">
+        <div class="navbar px-8 py-3 flex gap-5 h-[65px]">
             <!-- Navbar Start -->
             <div class="navbar-start flex justify-between items-center w-full lg:flex-1">
-
 
                 <!-- Logo -->
                 <a href="/" class="flex items-center h-full ">
                     <img src="{{ asset('/frontend/images/nav_logo.png') }}" alt="Logo"
-                        class="h-auto w-auto max-w-[12rem] md:max-w-[16rem] lg:max-w-[22rem]" />
+                        class="h-auto w-auto max-w-[16rem] md:max-w-[22rem] lg:max-w-[22rem]" />
                 </a>
 
                 <!-- Mobile Menu -->
@@ -28,10 +27,10 @@
                                 <summary>About Us</summary>
                                 <ul class="pl-4 space-y-1">
                                     <li><a href="/demo">About Founder</a></li>
-                                    <li><a href="#">Chairman's Message</a></li>
-                                    <li><a href="#">Mission & Vision</a></li>
-                                    <li><a href="#">Our Values</a></li>
-                                    <li><a href="#">Board of Corporate Directors</a></li>
+                                    <li><a href="/demo">Chairman's Message</a></li>
+                                    <li><a href="/demo">Mission & Vision</a></li>
+                                    <li><a href="/demo">Our Values</a></li>
+                                    <li><a href="/demo">Board of Corporate Directors</a></li>
                                 </ul>
                             </details>
                         </li>
@@ -39,23 +38,35 @@
                             <details>
                                 <summary>Our Companies</summary>
                                 <ul class="pl-4 space-y-1">
-                                    <li><a href="#">Amanat Model Agro Pvt. Ltd.</a></li>
-                                    <li><a href="#">Amanat Model Security Service Pvt. Ltd.</a></li>
-                                    <li><a href="#">Amanat Model IT Pvt. Ltd.</a></li>
-                                    <li><a href="#">Amanat Model Trading House Pvt. Ltd.</a></li>
-                                    <li><a href="#">Amanat Model Food’s & Beverage Pvt. Ltd.</a></li>
-                                    <li><a href="#">Amanat Model Properties Pvt. Ltd.</a></li>
+                                    <li><a href="/demo">Amanat Model Agro Pvt. Ltd.</a></li>
+                                    <li><a href="/demo">Amanat Model Security Service Pvt. Ltd.</a></li>
+                                    <li><a href="/demo">Amanat Model IT Pvt. Ltd.</a></li>
+                                    <li><a href="/demo">Amanat Model Trading House Pvt. Ltd.</a></li>
+                                    <li><a href="/demo">Amanat Model Food's & Beverage Pvt. Ltd.</a></li>
+                                    <li><a href="/demo">Amanat Model Properties Pvt. Ltd.</a></li>
+                                    <li><a href="/demo">Amanat Trading Corporative Bank Pvt. Ltd. </a></li>
                                 </ul>
                             </details>
                         </li>
-                        <li><a href="#">Our Brands</a></li>
+                        {{--  --}}
+                        <li>
+                            <details>
+                                <summary>Our Brands</summary>
+                                <ul class="pl-4 space-y-1">
+                                <a href="/demo"> <img class="w-8" src="{{asset('frontend/images/logo2.png')}}" alt=""> </a>
+                                <a href="/demo"> <img class="w-8" src="{{asset('frontend/images/amanat_model_foundation.jpeg')}}" alt=""> </a>
+                                <a href="/demo"> <img class="w-8" src="{{asset('frontend/images/amanat_agro.jpeg')}}" alt=""> </a>
+                                </ul>
+                            </details>
+                        </li>
+                        {{-- <li><a href="/demo">Our Brands</a></li> --}}
                         <li>
                             <details>
                                 <summary>Media</summary>
                                 <ul class="pl-4 space-y-1">
-                                    <li><a href="#">News & Events</a></li>
-                                    <li><a href="#">Photo</a></li>
-                                    <li><a href="#">Video</a></li>
+                                    <li><a href="/demo">News & Events</a></li>
+                                    <li><a href="/demo">Photo</a></li>
+                                    <li><a href="/demo">Video</a></li>
                                     <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
                                     <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
                                 </ul>
@@ -65,15 +76,13 @@
                             <details>
                                 <summary>CSR</summary>
                                 <ul class="pl-4 space-y-1">
-                                    <li><a href="#">Foundation</a></li>
+                                    <li><a href="/demo">Amanat Model Foundation</a></li>
                                 </ul>
                             </details>
                         </li>
                         <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
-
-
 
             </div>
 
@@ -97,11 +106,10 @@
                             class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-80 z-50 space-y-2">
                                 <a href="/demo" class="block hover:text-sky-600 transition">About Founder</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Chairman's Message</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Mission & Vision</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Our Values</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Board of Corporate
-                                    Directors</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Chairman's Message</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Mission & Vision</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Our Values</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Board of Corporate Directors</a>
                             </div>
                         </div>
                     </li>
@@ -119,22 +127,39 @@
                         <div
                             class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-96 z-50 space-y-2">
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Agro Pvt. Ltd.</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Security
-                                    Service Pvt. Ltd.</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model IT Pvt. Ltd.</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Trading House Pvt.
-                                    Ltd.</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Food’s &
-                                    Beverage Pvt. Ltd.</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Amanat Model Properties Pvt.
-                                    Ltd.</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Amanat Model Agro Pvt. Ltd.</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Amanat Model Security Service Pvt. Ltd.</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Amanat Model IT Pvt. Ltd.</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Amanat Model Trading House Pvt. Ltd.</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Amanat Model Food's & Beverage Pvt. Ltd.</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Amanat Model Properties Pvt. Ltd.</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Amanat Trading Corporative Bank Pvt. Ltd.</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    {{-- our brands --}}
+                    <li class="relative group">
+                        <span class="flex items-center cursor-pointer hover:text-sky-600 transition-all duration-200">
+                            Our Brands
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                        <div
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
+                            <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-64 z-50 flex justify-evenly items-center ga-6">
+                                <a href="/demo" class="block hover:text-sky-600 transition"> <img class="w-18" src="{{asset('frontend/images/logo2.png')}}" alt=""> </a>
+                                <a href="/demo" class="block hover:text-sky-600 transition"> <img class="w-18" src="{{asset('frontend/images/amanat_model_foundation.jpeg')}}" alt=""> </a>
+                                <a href="/demo" class="block hover:text-sky-600 transition"> <img class="w-18" src="{{asset('frontend/images/amanat_agro.jpeg')}}" alt=""> </a>
                             </div>
                         </div>
                     </li>
 
                     <!-- Our Brands -->
-                    <li><a href="#" class="hover:text-sky-600 transition-all duration-200">Our Brands</a></li>
+                    {{-- <li><a href="/demo" class="hover:text-sky-600 transition-all duration-200">Our Brands</a></li> --}}
 
                     <!-- Media -->
                     <li class="relative group">
@@ -149,13 +174,11 @@
                         <div
                             class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-64 z-50 space-y-2">
-                                <a href="#" class="block hover:text-sky-600 transition">News & Events</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Photo</a>
-                                <a href="#" class="block hover:text-sky-600 transition">Video</a>
-                                <a href="https://facebook.com" target="_blank"
-                                    class="block hover:text-sky-600 transition">Facebook</a>
-                                <a href="https://youtube.com" target="_blank"
-                                    class="block hover:text-sky-600 transition">YouTube</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">News & Events</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Photo</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition">Video</a>
+                                <a href="https://facebook.com" target="_blank" class="block hover:text-sky-600 transition">Facebook</a>
+                                <a href="https://youtube.com" target="_blank" class="block hover:text-sky-600 transition">YouTube</a>
                             </div>
                         </div>
                     </li>
@@ -173,18 +196,17 @@
                         <div
                             class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-64 z-50 space-y-2">
-                                <a href="#" class="block hover:text-sky-600 transition">Foundation</a>
+                                <a href="/demo" class="block hover:text-sky-600 transition"> Amanat Model Foundation </a>
                             </div>
                         </div>
                     </li>
 
                     <!-- Contact Us -->
                     <li>
-
-                        <a class="inline-flex items-center gap-1 border-2 border-gray-600 px-6 py-3 hover:bg-gray-200 transition-all duration-200 cursor-pointer group"
+                        <a class="inline-flex items-center gap-2 border-2 border-gray-600 px-3 py-1 hover:bg-sky-300 transition-all duration-200 cursor-pointer group"
                             href="/contact">
                             <span>Contact Us</span>
-                            <span class="transform transition-transform duration-300 group-hover:translate-x-2">
+                            <span class="transform transition-transform ease-in-out duration-300 group-hover:translate-x-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -192,25 +214,9 @@
                                 </svg>
                             </span>
                         </a>
-
                     </li>
                 </ul>
             </div>
-
-            <!-- Navbar End -->
-            {{-- <div class="navbar-end hidden lg:flex">
-                <a class="inline-flex items-center gap-1 border-2 border-gray-600 px-6 py-3 hover:bg-gray-200 transition-all duration-200 cursor-pointer group"
-                    href="/contact">
-                    <span>Contact Us</span>
-                    <span class="transform transition-transform duration-300 group-hover:translate-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                        </svg>
-                    </span>
-                </a>
-            </div> --}}
         </div>
     </div>
 </nav>
