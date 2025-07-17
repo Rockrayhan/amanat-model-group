@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Amanat Group')</title>
 
     {{-- favicon --}}
-      <link rel="icon" type="image/x-icon" href="{{asset('frontend/images/logo2.png')}}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('frontend/images/loader-logo.png') }}">
 
     {{-- tailwind --}}
     <script src="https://cdn.tailwindcss.com"></script>
@@ -48,15 +51,15 @@
 
     <!-- Loader -->
     <div id="pageLoader"
-        class="fixed inset-0 bg-white dark:bg-gray-900 z-[9999] flex items-center justify-center opacity-100 transition-opacity duration-500 ease-in-out">
+        class="fixed inset-0 bg-gray-900 z-[9999] flex items-center justify-center opacity-100 transition-opacity ease-in-out">
 
         <div class="flex flex-col items-center space-y-2">
             <!-- Logo -->
-            <img src="{{ asset('/frontend/images/logo.png') }}" alt="Loading Logo"
-                class="h-52 w-auto animate-pulse rounded-lg shadow" />
+            <img src="{{ asset('/frontend/images/loader-logo.png') }}" alt="Loading Logo"
+                class="h-52 w-auto animate-pulse  rounded-lg shadow" />
 
             <!-- Spinner -->
-            <span class="loading loading-spinner loading-lg text-secondary"></span>
+            {{-- <span class="loading loading-spinner loading-lg text-secondary"></span> --}}
         </div>
     </div>
 
@@ -68,6 +71,35 @@
     <footer>
         @include('frontend.includes.footer')
     </footer>
+
+    {{-- mobile script --}}
+<script>
+ const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+
+toggle.addEventListener('click', function () {
+    const isVisible = menu.classList.contains('visible');
+
+    if (isVisible) {
+        menu.classList.remove('visible', 'animate__slideInDown');
+        menu.classList.add('invisible', 'opacity-0', 'scale-95');
+    } else {
+        menu.classList.remove('invisible', 'opacity-0', 'scale-95');
+        menu.classList.add('visible', 'animate__slideInDown');
+    }
+});
+
+// Optional: Close when clicking outside
+document.addEventListener('click', function (e) {
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.classList.remove('visible', 'animate__slideInDown');
+        menu.classList.add('invisible', 'opacity-0', 'scale-95');
+    }
+});
+
+</script>
+
+
 
     {{-- swiper js --}}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -104,8 +136,8 @@
         });
     </script>
 
-{{-- smooth scroll --}}
-<script src="{{ asset('/frontend/SmoothScroll.js') }}"></script>
+    {{-- smooth scroll --}}
+    <script src="{{ asset('/frontend/SmoothScroll.js') }}"></script>
 
 
     @yield('scripts')

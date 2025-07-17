@@ -108,10 +108,10 @@
 
 
     {{-- short description --}}
-    <section class="bg-secondary text-white">
-        <p class="container text-center px-10 py-12 w-4/5 text-xl">
+    <section class="bg-secondary-light text-secondary">
+        <p class="p container text-center px-10 py-12 w-full md:w-4/5">
             Amanat Model Group is a forward-thinking and diversified business group rooted in strong values and visionary
-            leadership. With operations across key sectors including textiles, finance, agriculture, healthcare, and
+            leadership. Operations across key sectors including textiles, finance, agriculture, healthcare, and
             education, the group continues to drive sustainable growth and innovation.
             Guided by a commitment to quality, community impact, and ethical business practices, Amanat Model Group aims to
             empower industries and uplift lives across Bangladesh.
@@ -119,11 +119,11 @@
     </section>
 
 
-    {{-- our brands --}}
+    {{-- our Companies --}}
 
     <section class="container mx-auto px-4 py-16">
         <h1 class="h3 font-bold text-center text-secondary mb-10">
-            OUR BRANDS & COMPANIES
+            OUR BUSINESS & COMPANIES
 
             <span class="text-white bg-secondary py-2 inline-block rounded w-[400px]">
                 <span id="brandText" class="inline-block w-full text-center animate__animated animate__slower">
@@ -236,7 +236,7 @@
     {{-- about section 1 --}}
 
     <section class="my-6 py-16">
-        <div class="container center gap-4 flex-wrap">
+        <div class="container flex justify-center items-center gap-6 flex-wrap">
             <div
                 class="flex flex-col items-center gap-2 rounded-xl border-secondary w-62 p-4
               transition-all duration-700 ease-in-out hover:shadow-2xl hover:shadow-blue-300 hover:scale-[1.03]">
@@ -276,8 +276,8 @@
 
     {{-- Our Founder --}}
 
-    <section class="bg-secondary text-white py-16 container">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 items-center px-4">
+    <section class="bg-secondary-light text-secondary py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-10 container">
 
             <!-- Left Image -->
             <div>
@@ -417,9 +417,9 @@
 
 
         <!-- Header Section -->
-        <div class="flex flex-col lg:flex-row gap-12 mb-16">
+        <div class="flex justify-center flex-col lg:flex-row items-center gap-12 mb-16">
             {{-- left side --}}
-            <div class="md:w-2/5 w-full flex items-center">
+            <div class="md:w-2/5 w-full flex items-center text-center md:text-start">
                 <div>
                     <h2 class="h2 font-bold text-secondary mb-6 relative text-secondary">
                         Our Honorable Clients
@@ -433,19 +433,23 @@
             </div>
 
             <!-- Client Logos Grid -->
-            <div class="md:w-3/5 w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-                @for ($i = 19; $i < 27; $i++)
-                    <div
-                        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex items-center justify-center h-32">
-                        <img src="{{ asset('/frontend/images/clients/client' . $i . '.jpg') }}" alt="Client logo"
-                            class="max-h-16 w-auto object-contain"
-                            loading="lazy">
-                    </div>
-                @endfor
+            <div class="md:w-3/5 w-full">
 
-                <a href="/contact#all-brands">
-                    <x-frontend.show-more-button />
-                </a>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                    @for ($i = 19; $i < 27; $i++)
+                        <div
+                            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex items-center justify-center h-32">
+                            <img src="{{ asset('/frontend/images/clients/client' . $i . '.jpg') }}" alt="Client logo"
+                                class="" loading="lazy">
+
+                        </div>
+                    @endfor
+                </div>
+                <div class="flex md:justify-start justify-center mt-6">
+                    <a href="/contact#all-brands">
+                        <x-frontend.show-more-button />
+                    </a>
+                </div>
             </div>
 
 
@@ -657,7 +661,10 @@
             "MODEL FOUNDATION",
             "AGRO LIMITED",
             "COOPERATIVE BANK",
-            "FOOD & BEVERAGE"
+            "FOOD & BEVERAGE",
+            "TRADING HOUSE",
+            "SECURITY SERVICE",
+            "IT SERVICE"
         ];
 
         let index = 0;

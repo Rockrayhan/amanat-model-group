@@ -1,48 +1,35 @@
 html,
 body {
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    /* color: #301B0E; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 .container {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 6rem; /* 16px padding */
-    padding-right: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem; 
     max-width: 100%;
 }
 
-@media (min-width: 640px) {
-    .container {
-        max-width: 640px; /* sm */
-    }
-}
+
 
 @media (min-width: 768px) {
     .container {
-        max-width: 768px; /* md */
+        max-width: 768px; /* md:max-w-screen-md */
     }
 }
 
 @media (min-width: 1024px) {
     .container {
-        max-width: 1024px; /* lg */
+        max-width: 1024px; /* lg:max-w-screen-lg */
     }
 }
 
 @media (min-width: 1280px) {
     .container {
-        max-width: 1280px; /* xl */
-    }
-}
-
-@media (min-width: 1536px) {
-    .container {
-        max-width: 1536px; /* 2xl */
+        max-width: 1280px; /* xl:max-w-screen-xl */
     }
 }
 
@@ -103,7 +90,6 @@ body {
 }
 
 .p {
-    color: #e4e4e4;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -177,6 +163,10 @@ body {
 
 .bg-primary {
     background-color: #39b54a;
+}
+
+.bg-secondary-light {
+    background-color: #0083cb1a !important;
 }
 
 .bg-secondary {
