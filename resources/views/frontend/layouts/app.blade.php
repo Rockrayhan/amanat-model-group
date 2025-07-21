@@ -51,15 +51,13 @@
 
     <!-- Loader -->
     <div id="pageLoader"
-        class="fixed inset-0 bg-gray-900 z-[9999] flex items-center justify-center opacity-100 transition-opacity ease-in-out">
+        class="fixed inset-0 bg-white z-[9999] flex items-center justify-center opacity-100 transition-opacity ease-in-out">
 
         <div class="flex flex-col items-center space-y-2">
             <!-- Logo -->
             <img src="{{ asset('/frontend/images/loader-logo.png') }}" alt="Loading Logo"
-                class="h-52 w-auto animate-pulse  rounded-lg shadow" />
+                class="h-52 w-auto animate-pulse  rounded-lg" />
 
-            <!-- Spinner -->
-            {{-- <span class="loading loading-spinner loading-lg text-secondary"></span> --}}
         </div>
     </div>
 

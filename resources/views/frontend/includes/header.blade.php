@@ -1,4 +1,4 @@
-<nav class="relative z-50  mb-[3.5rem] md:mb-[5.3rem]">
+<nav class="relative z-50  mb-[3.5rem] md:mb-[5rem]">
     <div class="fixed top-0 left-0 w-full shadow-lg z-50 bg-[rgba(255,255,255,0.86)] backdrop-blur-sm">
         <div class="navbar px-4 sm:px-8 py-2 flex gap-5 h-[65px] md:h-auto">
             <!-- Navbar Start -->
@@ -7,8 +7,9 @@
                 <!-- Logo -->
                 <a href="/" class="flex items-center h-full">
                     <img src="{{ asset('/frontend/images/nav_logo.png') }}" alt="Logo"
-                        class="h-[60px] w-[300px] md:h-[70px] md:w-auto">
+                        class="h-10 sm:h-12 md:h-16 w-auto max-w-full object-contain" />
                 </a>
+
 
                 <!-- Mobile Navigation -->
                 <div class="relative lg:hidden">
@@ -40,14 +41,39 @@
                                             d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </summary>
-                                <ul class="pl-4 mt-3 space-y-3">
-                                    <li><a href="/demo" class="text-base block py-2">About Founder</a></li>
-                                    <li><a href="/demo" class="text-base block py-2">Chairman's Message</a></li>
-                                    <li><a href="/demo" class="text-base block py-2">Mission & Vision</a></li>
-                                    <li><a href="/demo" class="text-base block py-2">Our Values</a></li>
-                                    <li><a href="/demo" class="text-base block py-2">Board of Corporate Directors</a>
+                                <ul class="pl-4 mt-3 space-y-3 text-gray-800">
+                                    <li>
+                                        <a href="/about/about-founder"
+                                            class="text-base block py-2 hover:text-sky-600 transition">
+                                            About Founder
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/about/chairmans-message"
+                                            class="text-base block py-2 hover:text-sky-600 transition">
+                                            Chairman's Message
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/about/mission-vision"
+                                            class="text-base block py-2 hover:text-sky-600 transition">
+                                            Mission & Vision
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/about/our-values"
+                                            class="text-base block py-2 hover:text-sky-600 transition">
+                                            Our Values
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/about/board-of-directors"
+                                            class="text-base block py-2 hover:text-sky-600 transition">
+                                            Board of Corporate Directors
+                                        </a>
                                     </li>
                                 </ul>
+
                             </details>
                         </li>
 
@@ -174,13 +200,18 @@
                             </svg>
                         </span>
                         <div
-                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-lg">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-80 z-50 space-y-2">
-                                <a href="/demo" class="block hover:text-sky-600 transition">About Founder</a>
-                                <a href="/demo" class="block hover:text-sky-600 transition">Chairman's Message</a>
-                                <a href="/demo" class="block hover:text-sky-600 transition">Mission & Vision</a>
-                                <a href="/demo" class="block hover:text-sky-600 transition">Our Values</a>
-                                <a href="/demo" class="block hover:text-sky-600 transition">Board of Corporate
+                                <a href="/about/about-founder" class="block hover:text-sky-600 transition">About
+                                    Founder</a>
+                                <a href="/about/chairmans-message"
+                                    class="block hover:text-sky-600 transition">Chairman's Message</a>
+                                <a href="/about/mission-vision" class="block hover:text-sky-600 transition">Mission &
+                                    Vision</a>
+                                <a href="/about/our-values" class="block hover:text-sky-600 transition"> Our Values
+                                </a>
+                                <a href="/about/board-of-directors" class="block hover:text-sky-600 transition">Board
+                                    of Corporate
                                     Directors</a>
                             </div>
                         </div>
@@ -197,7 +228,7 @@
                             </svg>
                         </span>
                         <div
-                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-lg">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-96 z-50 space-y-2">
                                 <a href="/demo" class="block hover:text-sky-600 transition">Amanat Model Agro Pvt.
                                     Ltd.</a>
@@ -228,7 +259,7 @@
                             </svg>
                         </span>
                         <div
-                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-lg">
                             <div
                                 class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-64 z-50 flex justify-evenly items-center ga-6">
                                 <a href="/demo" class="block hover:text-sky-600 transition"> <img class="w-18"
@@ -256,7 +287,7 @@
                             </svg>
                         </span>
                         <div
-                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-lg">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-64 z-50 space-y-2">
                                 <a href="/demo" class="block hover:text-sky-600 transition">News & Events</a>
                                 <a href="/demo" class="block hover:text-sky-600 transition">Photo</a>
@@ -280,7 +311,7 @@
                             </svg>
                         </span>
                         <div
-                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-base">
+                            class="pointer-events-none absolute top-full left-0 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300 ease-in-out text-lg">
                             <div class="bg-base-100 shadow-lg rounded-md mt-2 p-4 w-64 z-50 space-y-2">
                                 <a href="/demo" class="block hover:text-sky-600 transition"> Amanat Model Foundation
                                 </a>

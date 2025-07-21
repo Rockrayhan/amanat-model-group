@@ -121,112 +121,75 @@
 
     {{-- our Companies --}}
 
-    <section class="container mx-auto px-4 py-16">
-        <h1 class="h3 font-bold text-center text-secondary mb-10">
+    <section class="container mx-auto py-16">
+        <h3 class="h3 font-bold text-center text-secondary mb-10">
             OUR BUSINESS & COMPANIES
 
-            <span class="text-white bg-secondary py-2 inline-block rounded w-[400px]">
+            <span class="text-white bg-secondary py-2 inline-block rounded md:w-[400px] w-full">
                 <span id="brandText" class="inline-block w-full text-center animate__animated animate__slower">
                     <!-- Brand will appear here -->
                 </span>
             </span>
-        </h1>
+        </h3>
 
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 md:gap-y-4 gap-y-8">
 
-            <!-- Amanat Model Agro Pvt. Ltd. -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-                <div class="flex gap-4">
-                    <img class="h-20 w-20 object-cover rounded-md" src="{{ asset('/frontend/images/amanat_agro.jpeg') }}"
-                        alt="Amanat Agro Logo">
+            @foreach ([
+            [
+                'title' => 'AMANAT MODEL AGRO PVT. LTD.',
+                'desc' => 'Advancing sustainable agriculture with innovation, supporting local farmers and promoting eco-friendly practices.',
+                'img' => '/frontend/images/amanat_agro.jpeg',
+                'alt' => 'Amanat Agro Logo',
+            ],
+            [
+                'title' => 'AMANAT MODEL SECURITY SERVICE PVT. LTD.',
+                'desc' => 'Providing top-notch security solutions with trained personnel and the latest surveillance technologies.',
+                'img' => '',
+                'alt' => 'AMANAT Security',
+            ],
+            [
+                'title' => 'AMANAT MODEL IT PVT. LTD.',
+                'desc' => 'Empowering businesses with digital transformation, software development, and IT consulting services.',
+                'img' => '',
+                'alt' => 'AMANAT MODEL IT',
+            ],
+            [
+                'title' => 'AMANAT MODEL TRADING HOUSE PVT. LTD.',
+                'desc' => 'A dynamic trading company specializing in quality goods distribution, import/export, and business solutions.',
+                'img' => '',
+                'alt' => 'AMANAT Trading House',
+            ],
+            [
+                'title' => 'AMANAT MODEL FOOD’S & BEVERAGE PVT. LTD.',
+                'desc' => 'Delivering quality food and beverage products with a focus on health, hygiene, and consumer satisfaction.',
+                'img' => '',
+                'alt' => 'Amanat Food & Beverage',
+            ],
+            [
+                'title' => 'AMANAT MODEL PROPERTIES PVT. LTD.',
+                'desc' => 'Transforming skylines with reliable, innovative, and sustainable real estate development projects.',
+                'img' => '',
+                'alt' => 'Amanat Real Estate',
+            ],
+        ] as $item)
+                <div
+                    class="flex flex-col sm:flex-row items-start sm:items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto">
+                    <img class="h-20 w-20 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4" src="{{ asset($item['img']) }}"
+                        alt="{{ $item['alt'] }}">
                     <div>
-                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL AGRO PVT. LTD.</h4>
-                        <p class="text-gray-600 leading-relaxed">
-                            Advancing sustainable agriculture with innovation, supporting local farmers and promoting
-                            eco-friendly practices.
+                        <h4 class="text-lg sm:text-xl font-semibold text-secondary mb-1 break-words leading-tight">
+                            {{ $item['title'] }}
+                        </h4>
+                        <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                            {{ $item['desc'] }}
                         </p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Amanat Model Security Service Pvt. Ltd. -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-                <div class="flex gap-4">
-                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="AMANAT Security">
-                    <div>
-                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL SECURITY SERVICE PVT. LTD.</h4>
-                        <p class="text-gray-600 leading-relaxed">
-                            Providing top-notch security solutions with trained personnel and the latest surveillance
-                            technologies.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Amanat Model IT Pvt. Ltd. -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-                <div class="flex gap-4">
-                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="AMANAT MODEL IT">
-                    <div>
-                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL IT PVT. LTD.</h4>
-                        <p class="text-gray-600 leading-relaxed">
-                            Empowering businesses with digital transformation, software development, and IT consulting
-                            services.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Amanat Model Trading House Pvt. Ltd. -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-                <div class="flex gap-4">
-                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="AMANAT Trading House">
-                    <div>
-                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL TRADING HOUSE PVT. LTD.</h4>
-                        <p class="text-gray-600 leading-relaxed">
-                            A dynamic trading company specializing in quality goods distribution, import/export, and
-                            business solutions.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Amanat Model Food’s & Beverage Pvt. Ltd. -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-                <div class="flex gap-4">
-                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="Amanat Food & Beverage">
-                    <div>
-                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL FOOD’S & BEVERAGE PVT. LTD.</h4>
-                        <p class="text-gray-600 leading-relaxed">
-                            Delivering quality food and beverage products with a focus on health, hygiene, and consumer
-                            satisfaction.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Amanat Model Properties Pvt. Ltd. -->
-            <div
-                class="flex items-center shadow-md rounded-xl p-5 hover:shadow-xl transition-all duration-300 w-full max-w-md mx-auto h-50">
-                <div class="flex gap-4">
-                    <img class="h-20 w-20 object-cover rounded-md" src="" alt="Amanat Real Estate">
-                    <div>
-                        <h4 class="text-xl font-semibold text-secondary mb-1">AMANAT MODEL PROPERTIES PVT. LTD.</h4>
-                        <p class="text-gray-600 leading-relaxed">
-                            Transforming skylines with reliable, innovative, and sustainable real estate development
-                            projects.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
 
         </div>
+
 
 
     </section>
@@ -288,14 +251,16 @@
             <!-- Right Content -->
             <div class="w-full flex justify-center">
                 <div class="space-y-6 w-full max-w-lg text-center md:text-left">
-                    <h2 class="h2 font-bold leading-tight"> Our Founder </h2>
-                    <p class="text-lg leading-relaxed">
-                        Since our establishment in 1990, Amanat Group has evolved into a diversified business entity with
-                        operations spanning manufacturing, technology, healthcare, and infrastructure.
+                    <h2 class="h2 font-bold leading-tight"> About Founder </h2>
+                    <p class="text-lg leading-relaxed font-semibold">
+                        Dr. Abdul Azim Al-Farooqi <br>
+                        Founder & Chairman, Amanat Model Group.
                     </p>
                     <p class="text-lg leading-relaxed">
-                        Guided by a vision of sustainable growth and community empowerment, we are committed to innovation,
-                        excellence, and delivering value across every sector we touch.
+                        Dr. Abdul Azim Al-Farooqi is a distinguished Islamic scholar, renowned for his deep commitment to
+                        Islamic values and education. He is a Guardian of Islamic Principles, a Hafiz-e-Qur’an,
+                        Hafiz-e-Hadith, and a respected Shaikh-ul-Hadith. As the visionary founder and chairman of Amanat
+                        Model Group, he leads with unwavering dedication to faith, integrity, and community development.
                     </p>
                     <x-frontend.show-more-button />
                 </div>
@@ -470,7 +435,7 @@
         </h1>
 
 
-        <div class="relative px-12 py-8 max-w-7xl mx-auto">
+        <div class="relative max-w-7xl mx-auto">
             <!-- Swiper -->
             <div class="swiper blogSwiper">
                 <div class="swiper-wrapper pb-12">
@@ -580,10 +545,10 @@
                 <!-- Navigation Buttons -->
                 <!-- Navigation Buttons -->
                 <div
-                    class="swiper-button-next bg-sky-400/50 hover:bg-sky-400 text-gray-800 rounded-full w-12 h-12 shadow-md transition-all flex items-center justify-center">
+                    class="swiper-button-next bg-sky-400/40 hover:bg-sky-400/70 text-gray-600 rounded-full w-12 h-12 shadow-md transition-all flex items-center justify-center">
                 </div>
                 <div
-                    class="swiper-button-prev bg-sky-400/50 hover:bg-sky-400 text-gray-800 rounded-full w-12 h-12 shadow-md transition-all flex items-center justify-center">
+                    class="swiper-button-prev bg-sky-400/40 hover:bg-sky-400/70 text-gray-600 rounded-full w-12 h-12 shadow-md transition-all flex items-center justify-center">
                 </div>
 
             </div>

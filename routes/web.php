@@ -24,9 +24,6 @@ Route::get('/', function () {
     return view('frontend.home');
 }) ;
 
-Route::get('/about/management', function () {
-    return view('frontend.management');
-}) ;
 Route::get('/contact', function () {
     return view('frontend.contact');
 }) ;
@@ -35,6 +32,26 @@ Route::get('/demo', function () {
     return view('frontend.demo');
 }) ;
 
+Route::get('/about/board-of-directors', function () {
+    return view('frontend.management');
+}) ;
+
+Route::get('/about/about-founder', function () {
+    return view('frontend.aboutFounder');
+}) ;
+
+Route::get('/about/chairmans-message', function () {
+    return view('frontend.chairmansMessage');
+}) ;
+
+Route::get('/about/mission-vision', function () {
+    return view('frontend.missionVision');
+}) ;
+
+
+Route::get('/about/our-values', function () {
+    return view('frontend.ourValues');
+}) ;
 
 
 
